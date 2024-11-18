@@ -1,0 +1,27 @@
+.btnSubmit {
+    background-color: rgb(97, 20, 178);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    border-radius: 8px;
+    padding: 12px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+
+#sectionItems {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0px;
+}
+
+#message {
+    color: rgb(69, 243, 69);
+}
