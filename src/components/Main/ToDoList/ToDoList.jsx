@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 import "./ToDoList.css"
 
 const ToDoList = () => {
-  // ESTADO DE LOS ITEMS ---------------------------------
+  // ESTADO DE LOS ITEMS Y DEL MENSAJE -------------------------------
   const [items, setItems] = useState(data);
 
   // Estado para mostrar el mensaje
@@ -20,12 +20,10 @@ const ToDoList = () => {
     setItems([...items, new_item]);
     // Mostrar mensaje "tarea añadida"
     setMessage('Tarea añadida');
-    // El emnsaje desaparece a los 5 segs.
-    const messageTimer = setTimeout(() => {
+    // El mensaje desaparece a los 5 segs.
+    setTimeout(() => {
       setMessage('');
     }, 5000);
-    // Guardar el temporizador en el estado
-    setTimer(messageTimer);
   }
 
   // Cargar con los datos iniciales
@@ -60,7 +58,7 @@ const ToDoList = () => {
 
     if (values.stuff.length < 6) {
       setMessage('Mínimo 6 caracteres, por favor');
-      // El emnsaje desaparece a los 5 segs.
+      // El mensaje desaparece a los 5 segs.
       setTimeout(() => {
         setMessage('');
       }, 5000);
