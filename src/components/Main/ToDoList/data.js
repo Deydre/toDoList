@@ -2,9 +2,11 @@
  const initialItems = [
     {
       stuff: "Cambiar la arena del gato",
+      isDone: false
     },
     {
-      stuff: "Hacer katas"
+      stuff: "Hacer katas",
+      isDone: false
     }
   ]
 

@@ -23,3 +23,8 @@
 .squareBtn:hover {
     border-color: rgba(0, 0, 0, 0);
 }
+
+#icons {
+    display: flex;
+    gap: 8px;
+}
